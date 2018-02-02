@@ -1,0 +1,6 @@
+version: "3.4"
+services:
+    solution-manager:
+        image: registry.next.labs.aeb.com:5000/aeb/solution-manager:0.0.1-6371
+        ports:
+        - 4000:4000

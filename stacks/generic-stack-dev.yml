@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+    solution-manager-local:
+        image: registry.next.labs.aeb.com:5000/aeb/nodemon:latest
+        ports:
+            -
+                target: 4000
+                published: 8080
+                mode: ingress
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /c/_myPlace/workspace/solution-manager/server:/opt/app
+            - /c/_myPlace/workspace/solution-manager/dist/static:/opt/static
