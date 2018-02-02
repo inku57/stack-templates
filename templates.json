@@ -1,0 +1,13 @@
+[
+  {
+    "type": "stack",
+    "title": "Generic Solution Manager",
+    "description": "Generic Solution Manager for deploying a new nEXt Solution",
+    "note": "Deploys a generic Solution Manager with no Solution Manifest. The Solution Manager will come up and listen on a non-http port (somewhere on port 3000x). Point your browser to that port to import a Solution Manifest and trigger further bootstrap process of new nEXt Solution",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/inku57/stack-templates",
+      "stackfile": "stacks/generic-stack-dev.yml"
+    }
+  }
+]
